@@ -1,0 +1,51 @@
+---
+layout: abstract
+title: Life-Enhancer | MH
+permalink: /life-enhancer/
+style-url: "/assets/css/life.css"
+---
+
+{% include navbar.html %}
+
+<div class="center-div">
+	<div class="canvas">
+		<div class="reality"></div>
+		<div class="fantasy">
+			<div class="the-wardrobe"></div>
+		</div>
+	</div>
+</div>
+<script>
+	var isDragging = false,
+		lastDropped = 0;
+
+	$(function() {
+		var canvas = $('.canvas'),
+			reality = $('.reality'),
+			fantasy = $('.fantasy'),
+			key = $('.the-wardrobe');
+
+		key.on('mousedown', function(e) {
+			isDragging = true;
+			lastDropped = e.clientX;
+		});
+
+		// $('.canvas').mouseleave(function() {
+		// 	isDragging = false;
+		// });
+
+		$(document).on('mousemove', function(e) {
+			if (!isDragging) {
+				return;
+			} else {
+				var offsetDrag = canvas.width() - (e.clientX - canvas.offset().left);
+				if (offsetDrag > 0 && offsetDrag < 1224) {
+					reality.css('right', offsetDrag);
+					fantasy.css('width', offsetDrag);
+				};
+			}
+		}).on('mouseup', function(e) {
+			isDragging = false;
+		});
+	});
+</script>

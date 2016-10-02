@@ -1,0 +1,36 @@
+section.about
+  min-height: 560px
+  width: 100%
+  background-color: $wa
+  // box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
+  position: relative
+
+  .about-wrapper
+    padding: 4em 2em
+    color: $ba
+
+    h2
+      margin: 0
+      padding: 0
+      overflow: hidden
+      font-size: 2.5em
+      line-height: 2em
+      font-weight: $regular
+
+    h3
+      font-size: 1.5em
+      line-height: 1.3em
+      margin: 0
+      padding: 15px 0
+      font-weight: $regular
+
+      @media (max-width: $break-tablet)
+        font-size: 1.4em
+
+      @media (max-width: $break-mobile-max)
+        font-size: 1.25em
+
+      .bg-highlight
+        background-color: $light-orange
+        padding: 5px 8px
+        display: inline-block

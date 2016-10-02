@@ -1,0 +1,61 @@
+nav.home-nav
+  height: 60px
+  width: 100%
+  background-color: $grue
+  position: relative
+  z-index: 1
+
+  .nav-content
+    max-width: $break-desktop-max
+    height: 100%
+    padding: 0 2em
+    margin: 0 auto
+
+    a.logo
+      width: 60px
+      height: 60px
+      margin: 0
+      padding: 0
+      overflow: hidden
+
+      img
+        width: auto !important
+        width: 100%
+        max-width: 60px
+        float: left
+        clear: both
+        transition: transform 300ms ease-in-out
+
+      &:hover img
+        transform: scale(1.1)
+
+
+    ul.nav-links
+      display: flex
+      justify-content: flex-end
+      list-style: none
+      margin: 0
+      padding: 0
+      height: 100%
+      font-size: 1em
+
+      a
+        height: 100%
+        padding: 5px 1em 0
+        line-height: 50px
+        color: white
+        font-weight: $medium
+        text-decoration: none
+
+        &:hover li
+          border-bottom: 5px solid $light-orange
+
+        li
+          margin: 0
+          padding: 0
+          border-bottom: 5px solid transparent
+          transition: border-bottom 300ms ease-in-out
+
+
+        .selected
+          border-bottom: 5px solid $orange !important

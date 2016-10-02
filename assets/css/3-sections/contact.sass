@@ -1,0 +1,105 @@
+section.contact
+  background: $clouds
+
+  .center-div
+    padding: 70px 20px 90px
+    height: auto
+  
+    h3
+      font-size: 2em
+      color: $ba
+      text-align: center
+      margin-bottom: 50px
+
+    .flex-row
+      justify-content: center
+
+      form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 640px
+
+        .in-group
+          border: 4px solid $orange
+          position: relative
+          margin-bottom: 15px
+          height: auto
+          width: auto
+
+          label
+            position: absolute
+            top: 2px
+            left: 10px
+            font-size: 0.75em
+            color: $lightgrue
+
+          select
+            height: auto
+            width: 100%
+            padding: 15px 10px 5px
+            appearance: none
+            border: none
+            background: url("../img/dropdown: .png") no-repeat right rgba(white, 0.3)
+            color: $grue
+
+            &:focus
+              outline: none
+
+          input, textarea
+            width: 100%
+            height: auto
+            padding: 15px 10px 2px
+            border: none
+            box-sizing: border-box
+            font-size: 1.2em
+            color: $grue
+            background-color: rgba(white, 0.3)
+            
+            &:focus
+              outline: none
+          
+          textarea
+            resize: none
+            display: block
+
+
+          &:first-child
+            flex-basis: 60%
+            @media (max-width: $break-mobile-max)
+              flex-basis: 100%
+
+          &:nth-child(2)
+            flex-basis: 35%
+            @media (max-width: $break-mobile-max)
+              flex-basis: 100%
+
+          &:nth-child(3)
+            flex-basis: 100%
+
+          &:nth-child(4)
+            flex-basis: 100%
+
+        #contact-btn
+          height: 50px
+          width: 150px
+          margin-left: auto
+          background-color: #ffbb19
+          font-size: 1.1em
+          color: white
+          border: 2px solid $orange
+          transition: all 300ms ease-in-out
+
+          &:hover, &:active, &:focus
+            background-color: $orange
+            border: 2px solid #e5a200
+        // textarea
+        //   flex-basis: 100%
+        // input:first-child
+        //   flex-basis: 60%
+        // input:nth-child(3)
+        //   flex-basis: 100%
+        // input:last-child
+        //   flex: 4
+

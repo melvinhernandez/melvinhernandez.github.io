@@ -1,0 +1,21 @@
+mixin product-box(name, subtitle, image)
+  .product-box(style="background-image: url(" + image + ")")
+    .product-info
+      h4 #{name}
+      h5 #{subtitle}
+
+section.work
+  .center-div
+    .heading
+      h3 WORK
+    //- .flex-row
+    //-   +product-box("MadScript", "Product Concept", "http://fillmurray.com/100/100")
+    //-   +product-box("LifeHub", "Product Concept", "https://scontent-sjc.xx.fbcdn.net/v/t1.0-9/12803112_1140680265952894_8781367580199399791_n.png?oh=47391a01e03fc3a453d4d2028f6def4c&oe=580CD15B")
+    //-   +product-box("Raza RRC", "Organization Website", "assets/img/raza-logo.jpg")
+    //-   +product-box("UC Berkeley Organizations", "Graphic Design", "assets/img/csf-logo.jpg")
+    //-   +product-box("Life Enhancer", "JavaScript & Photoshop", "http://i.imgur.com/XdRbt9A.png")
+    //-   +product-box("GitLit", "Java & Data-Structures", "http://i.imgur.com/GolEOIA.jpg")
+    //-   +product-box("Lines of Action", "Java Alpha-Beta Pruning", "http://i.imgur.com/CQkDqX5.png")
+    //-   +product-box("See More Projects", "Github.com", "http://i.imgur.com/jL5hOcm.png")
+    .flex-row
+      h3 Coming Soon

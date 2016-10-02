@@ -1,0 +1,79 @@
+section.intro
+  padding: 2em
+  height: 500px
+  background:
+    image: url(../../assets/img/raw-16-9-2.jpg)
+    size: cover
+    position: center
+    repeat: no-repeat
+
+  header
+    text-align: center
+    color: white
+    margin-top: 100px
+
+    h1
+      font-size: 4.5em
+      margin: 0
+      padding: 0
+      color: inherit
+      line-height: 0.8em
+
+      span.thin
+        font-weight: 100
+
+      span.thick
+        font-weight: 800
+    
+
+
+  .subheader
+    margin-top: 1em
+    width: 36em
+    max-width: 36em
+
+    h2
+      margin: 0
+      padding: 0
+      font-size: 2em
+      line-height: 1.3em
+      font-weight: 300
+      color: white
+
+      .left
+        text-align: left
+    h2.right
+      text-align: right
+      span.highlight
+        margin-right: 2px
+    span.highlight
+      background-color: $orange
+      padding: 1px 5px
+
+    @media (max-width: 560px)
+      h2
+        font-size: 1.5em
+
+  @media (max-width: 640px)
+    header
+      margin-top: 6em
+
+      h1
+        font-size: 3.5em
+
+    .subheader
+      margin-top: 1em
+      max-width: 95%
+
+@media (max-width: $break-mobile-max)
+  section.intro
+    height: 350px
+
+    header
+      margin-top: 6em
+
+      h1
+        font-size: 2.5em
+
+    .subheader h2
+      font-size: 1.1em
