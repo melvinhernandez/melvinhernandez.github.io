@@ -691,7 +691,7 @@ section.contact {
             font-size: 0.75em;
             color: #5b9db3; }
           section.contact .center-div .flex-row form .in-group select {
-            height: auto;
+            height: 45px;
             width: 100%;
             padding: 15px 10px 5px;
             appearance: none;
