@@ -1,28 +1,34 @@
 section.about
   min-height: 560px
   width: 100%
-  background-color: $wa
-  // box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
+  background:
+    image: url(../img/food.png)
+    position: center
+    attachment: fixed
   position: relative
 
   .about-wrapper
-    padding: 4em 2em
+    padding: 6em 2em
     color: $ba
+    text-align: center
 
     h2
-      margin: 0
+      margin: 0 0 0.5em
       padding: 0
       overflow: hidden
       font-size: 2.5em
-      line-height: 2em
-      font-weight: $regular
+      line-height: 1.2em
+      font-weight: $light
 
-    h3
+      i.fa
+        opacity: 0.8
+
+    p
       font-size: 1.5em
-      line-height: 1.3em
+      line-height: 1.4em
       margin: 0
       padding: 15px 0
-      font-weight: $regular
+      font-weight: $light
 
       @media (max-width: $break-tablet)
         font-size: 1.4em
@@ -30,7 +36,7 @@ section.about
       @media (max-width: $break-mobile-max)
         font-size: 1.25em
 
-      .bg-highlight
-        background-color: $light-orange
-        padding: 5px 8px
-        display: inline-block
+    .bg-highlight
+      padding: 0.4em 0.6em
+      display: inline-block
+      background: $light-orange

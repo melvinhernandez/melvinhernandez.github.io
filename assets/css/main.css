@@ -3,6 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,500,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -378,7 +380,7 @@ body {
   background-color: white;
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -460,10 +462,8 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
-  margin: 10px 0 30px;
   height: 0; }
 
 .center-div {
@@ -471,18 +471,26 @@ hr {
   margin: 0 auto; }
 
 section.intro {
-  padding: 2em;
-  height: 500px;
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background-image: url(../../assets/img/raw-16-9-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
   section.intro header {
     text-align: center;
-    color: white;
-    margin-top: 100px; }
+    color: white; }
     section.intro header h1 {
-      font-size: 4.5em;
+      font-size: 5em;
       margin: 0;
       padding: 0;
       color: inherit;
@@ -490,53 +498,57 @@ section.intro {
       section.intro header h1 span.thin {
         font-weight: 100; }
       section.intro header h1 span.thick {
-        font-weight: 800; }
+        font-weight: 500; }
   section.intro .subheader {
     margin-top: 1em;
     width: 36em;
     max-width: 36em; }
-    section.intro .subheader h2 {
+    section.intro .subheader p {
       margin: 0;
       padding: 0;
       font-size: 2em;
-      line-height: 1.3em;
+      line-height: 1.6em;
       font-weight: 300;
       color: white; }
-      section.intro .subheader h2 .left {
+      section.intro .subheader p .left {
         text-align: left; }
-    section.intro .subheader h2.right {
+    section.intro .subheader p.right {
       text-align: right; }
-      section.intro .subheader h2.right span.highlight {
+      section.intro .subheader p.right span.highlight {
         margin-right: 2px; }
     section.intro .subheader span.highlight {
-      background-color: #FFB400;
-      padding: 1px 5px; }
-    @media (max-width: 560px) {
-      section.intro .subheader h2 {
-        font-size: 1.5em; } }
-  @media (max-width: 640px) {
-    section.intro header {
-      margin-top: 6em; }
-      section.intro header h1 {
-        font-size: 3.5em; }
+      background-color: #f8b333;
+      padding: 1px 0.4em; }
+  @media (min-width: 320px) and (max-width: 568px) {
+    section.intro header h1 {
+      font-size: 3em; }
     section.intro .subheader {
-      margin-top: 1em;
-      max-width: 95%; } }
-
-@media (max-width: 480px) {
-  section.intro {
-    height: 350px; }
-    section.intro header {
-      margin-top: 6em; }
-      section.intro header h1 {
-        font-size: 2.5em; }
-    section.intro .subheader h2 {
-      font-size: 1.1em; } }
+      width: 100%; }
+      section.intro .subheader p {
+        text-align: center !important;
+        font-size: 1.4em; } }
+  @media (min-width: 375px) and (max-width: 667px) {
+    section.intro header h1 {
+      font-size: 4em; }
+    section.intro .subheader {
+      width: 95%; }
+      section.intro .subheader p {
+        text-align: center !important;
+        font-size: 1.6em; } }
+  @media (max-width: 480px) {
+    section.intro header h1 .subheader p {
+      font-size: 1.5em; } }
+  section.intro i.fa-chevron-down {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    font-size: 2em;
+    opacity: 0.65; }
 
 nav.home-nav {
   height: 60px;
   width: 100%;
-  background-color: #225C6E;
+  background-color: #286c81;
   position: relative;
   z-index: 1; }
   nav.home-nav .nav-content {
@@ -579,46 +591,51 @@ nav.home-nav {
         font-weight: 500;
         text-decoration: none; }
         nav.home-nav .nav-content ul.nav-links a:hover li {
-          border-bottom: 5px solid #FFD266; }
+          border-bottom: 5px solid #fbd58f; }
         nav.home-nav .nav-content ul.nav-links a li {
           margin: 0;
           padding: 0;
           border-bottom: 5px solid transparent;
           transition: border-bottom 300ms ease-in-out; }
         nav.home-nav .nav-content ul.nav-links a .selected {
-          border-bottom: 5px solid #FFB400 !important; }
+          border-bottom: 5px solid #fac564 !important; }
 
 section.about {
   min-height: 560px;
   width: 100%;
-  background-color: #f2f2f2;
+  background-image: url(../img/food.png);
+  background-position: center;
+  background-attachment: fixed;
   position: relative; }
   section.about .about-wrapper {
-    padding: 4em 2em;
-    color: #34495e; }
+    padding: 6em 2em;
+    color: #34495e;
+    text-align: center; }
     section.about .about-wrapper h2 {
-      margin: 0;
+      margin: 0 0 0.5em;
       padding: 0;
       overflow: hidden;
       font-size: 2.5em;
-      line-height: 2em;
-      font-weight: 400; }
-    section.about .about-wrapper h3 {
+      line-height: 1.2em;
+      font-weight: 300; }
+      section.about .about-wrapper h2 i.fa {
+        opacity: 0.8; }
+    section.about .about-wrapper p {
       font-size: 1.5em;
-      line-height: 1.3em;
+      line-height: 1.4em;
       margin: 0;
       padding: 15px 0;
-      font-weight: 400; }
+      font-weight: 300; }
       @media (max-width: 760px) {
-        section.about .about-wrapper h3 {
+        section.about .about-wrapper p {
           font-size: 1.4em; } }
       @media (max-width: 480px) {
-        section.about .about-wrapper h3 {
+        section.about .about-wrapper p {
           font-size: 1.25em; } }
-      section.about .about-wrapper h3 .bg-highlight {
-        background-color: #FFD266;
-        padding: 5px 8px;
-        display: inline-block; }
+    section.about .about-wrapper .bg-highlight {
+      padding: 0.4em 0.6em;
+      display: inline-block;
+      background: #fbd58f; }
 
 section.work {
   min-height: 400px;
@@ -679,7 +696,7 @@ section.contact {
             align-items: center;
         width: 640px; }
         section.contact .center-div .flex-row form .in-group {
-          border: 4px solid #FFB400;
+          border: 4px solid #fac564;
           position: relative;
           margin-bottom: 15px;
           height: auto;
@@ -741,10 +758,10 @@ section.contact {
           background-color: #ffbb19;
           font-size: 1.1em;
           color: white;
-          border: 2px solid #FFB400;
+          border: 2px solid #fac564;
           transition: all 300ms ease-in-out; }
           section.contact .center-div .flex-row form #contact-btn:hover, section.contact .center-div .flex-row form #contact-btn:active, section.contact .center-div .flex-row form #contact-btn:focus {
-            background-color: #FFB400;
+            background-color: #fac564;
             border: 2px solid #e5a200; }
 
 .home-wrap {

@@ -25,7 +25,8 @@ gulp.task("deploy", ["jekyll-build"], function () {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn(jekyll , ['build'], {stdio: 'inherit'})
+        .on('error', errorHandler)
         .on('close', done);
 });
 
@@ -63,24 +64,12 @@ gulp.task('sass', function () {
 });
 
 /**
- * Linking pug and Gulp together! Yasss!
- * Update a month later: not using it anymore
- * because I hate the way pug compiles. :(
- *  gulp.task('pug', function () {
- *      return gulp.src('_pugfiles/*.pug')
- *      .pipe(pug().on('error', gutil.log))
- *      .pipe(gulp.dest('_includes'));
- *  });
- */
-
-/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
-    gulp.watch('_pugfiles/*.pug', ['pug']);
 });
 
 /**
@@ -88,3 +77,8 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['sass', 'watch', 'browser-sync']);
+
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+}

@@ -1,6 +1,11 @@
 section.intro
-  padding: 2em
-  height: 500px
+  position: relative
+  box-sizing: border-box
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
   background:
     image: url(../../assets/img/raw-16-9-2.jpg)
     size: cover
@@ -10,10 +15,9 @@ section.intro
   header
     text-align: center
     color: white
-    margin-top: 100px
 
     h1
-      font-size: 4.5em
+      font-size: 5em
       margin: 0
       padding: 0
       color: inherit
@@ -23,57 +27,68 @@ section.intro
         font-weight: 100
 
       span.thick
-        font-weight: 800
-    
-
+        font-weight: 500
 
   .subheader
     margin-top: 1em
     width: 36em
     max-width: 36em
 
-    h2
+    p
       margin: 0
       padding: 0
       font-size: 2em
-      line-height: 1.3em
+      line-height: 1.6em
       font-weight: 300
       color: white
 
       .left
         text-align: left
-    h2.right
+
+    p.right
       text-align: right
+
       span.highlight
         margin-right: 2px
+
     span.highlight
-      background-color: $orange
-      padding: 1px 5px
+      background-color: darken($orange, 10%)
+      padding: 1px 0.4em
 
-    @media (max-width: 560px)
-      h2
-        font-size: 1.5em
-
-  @media (max-width: 640px)
-    header
-      margin-top: 6em
-
-      h1
-        font-size: 3.5em
+  // iPhone5
+  @media (min-width: 320px) and (max-width: 568px)
+    header h1
+      font-size: 3em
 
     .subheader
-      margin-top: 1em
-      max-width: 95%
+      width: 100%
 
-@media (max-width: $break-mobile-max)
-  section.intro
-    height: 350px
+      p
+        text-align: center !important
+        font-size: 1.4em
 
-    header
-      margin-top: 6em
+  // iPhone6
+  @media (min-width: 375px) and (max-width: 667px)
+    header h1
+      font-size: 4em
 
-      h1
-        font-size: 2.5em
+    .subheader
+      width: 95%
 
-    .subheader h2
-      font-size: 1.1em
+      p
+        text-align: center !important
+        font-size: 1.6em
+
+  @media (max-width: $break-mobile-max)
+    header h1
+      // font-size: 4em
+
+      .subheader p
+        font-size: 1.5em
+
+  i.fa-chevron-down
+    color: white
+    position: absolute
+    bottom: 10%
+    font-size: 2em
+    opacity: 0.65
