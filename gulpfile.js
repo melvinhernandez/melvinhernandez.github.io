@@ -44,7 +44,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
-        }
+        },
+        notify: false
     });
 });
 
