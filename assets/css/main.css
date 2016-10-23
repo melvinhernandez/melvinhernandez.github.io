@@ -776,15 +776,15 @@ section.contact {
         background-repeat: no-repeat;
         background-color: rgba(242, 242, 242, 0.7); }
     section.contact .social-media .github-btn:hover {
-      background-image: url(../img/github.png); }
+      background-image: url(../img/social/github.png); }
     section.contact .social-media .behance-btn:hover {
-      background-image: url(../img/behance.png); }
+      background-image: url(../img/social/behance.png); }
     section.contact .social-media .spotify-btn:hover {
-      background-image: url(../img/spotify.png); }
+      background-image: url(../img/social/spotify.png); }
     section.contact .social-media .twitter-btn:hover {
-      background-image: url(../img/twitter.png); }
+      background-image: url(../img/social/twitter.png); }
     section.contact .social-media .medium-btn:hover {
-      background-image: url(../img/medium.png); }
+      background-image: url(../img/social/medium.png); }
   section.contact .email-me {
     background-color: #21B6A8; }
     section.contact .email-me form.contact-form {
