@@ -809,7 +809,7 @@ section.contact {
     background-color: #198b80; }
     section.contact .social-media .social-btn {
       display: block;
-      max-width: 200px;
+      max-width: 300px;
       margin: 0 auto 1em;
       padding: 0.7em 3em;
       font-size: 1.2em;
@@ -831,15 +831,25 @@ section.contact {
         background-position: 1em center;
         background-repeat: no-repeat;
         background-color: rgba(242, 242, 242, 0.7); }
-    section.contact .social-media .github-btn:hover {
+    section.contact .social-media .github-btn:hover,
+    section.contact .social-media .github-btn:active,
+    section.contact .social-media .github-btn:focus {
       background-image: url(../img/social/github.png); }
-    section.contact .social-media .behance-btn:hover {
+    section.contact .social-media .behance-btn:hover,
+    section.contact .social-media .behance-btn:active,
+    section.contact .social-media .behance-btn:focus {
       background-image: url(../img/social/behance.png); }
-    section.contact .social-media .spotify-btn:hover {
+    section.contact .social-media .spotify-btn:hover,
+    section.contact .social-media .spotify-btn:active,
+    section.contact .social-media .spotify-btn:focus {
       background-image: url(../img/social/spotify.png); }
-    section.contact .social-media .twitter-btn:hover {
+    section.contact .social-media .twitter-btn:hover,
+    section.contact .social-media .twitter-btn:active,
+    section.contact .social-media .twitter-btn:focus {
       background-image: url(../img/social/twitter.png); }
-    section.contact .social-media .medium-btn:hover {
+    section.contact .social-media .medium-btn:hover,
+    section.contact .social-media .medium-btn:active,
+    section.contact .social-media .medium-btn:focus {
       background-image: url(../img/social/medium.png); }
   section.contact .email-me {
     background-color: #21B6A8; }
