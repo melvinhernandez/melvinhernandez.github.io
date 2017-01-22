@@ -17,7 +17,7 @@ section.contact
 
 
   .social-media
-    background-color: darken(#21B6A8, 10%)
+    background-color: #3B5A79
 
     .social-btn
       display: block
@@ -39,7 +39,7 @@ section.contact
 
       &:hover
         font-weight: $medium
-        color: darken(#21B6A8, 10%)
+        color: darken(#3B5A79, 10%)
         background:
           size: 30px 30px
           position: 1em center
@@ -77,7 +77,7 @@ section.contact
         image: url(../img/social/medium.png)
 
   .email-me
-    background-color: #21B6A8
+    background-color: #3B5A79
 
     form.contact-form
       max-width: 85%
@@ -86,7 +86,7 @@ section.contact
       padding: 0 0 6em
 
       .in-group
-        border: 4px solid #1a9186
+        border: 4px solid darken(#3B5A79, 5)
         position: relative
         margin-bottom: 15px
         height: auto
@@ -107,7 +107,7 @@ section.contact
           border: none
           box-sizing: border-box
           font-size: 1.2em
-          color: $grue
+          color: #3B5A79
           background-color: rgba(white, 0.3)
 
           &:focus
@@ -121,16 +121,16 @@ section.contact
       #contact-btn
         height: 50px
         width: 150px
-        background-color: lighten($grue, 5%)
+        background-color: darken(#87C6B5, 10)
         font-size: 1.1em
         color: white
-        border: 2px solid $grue
+        border: 2px solid darken(#87C6B5, 20)
         transition: all 300ms ease-in-out
         float: right
 
         &:hover, &:active, &:focus
-          background-color: $grue
-          border: 2px solid darken($grue, 5%)
+          background-color: darken(#87C6B5, 20)
+          border: 2px solid darken(#3B5A79, 5)
 
 @media (max-width: 768px)
   section.contact
