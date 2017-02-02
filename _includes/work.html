@@ -1,10 +1,21 @@
 <section class="work" id="work">
 	<div class="center-div">
 		<div class="heading">
-			<h3>WORK</h3>
+			<h3>FEATURED WORK</h3>
 		</div>
 		<div class="flex-row">
-			<h3>Coming Soon</h3>
+			{% for item in site.data.work %}
+			<div class="card">
+				<div class="card-image">
+					<img src="{{item.image}}" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="{{item.url}}">{{item.title}}</a>
+					<p class="work-tag">{{item.type}}</p>
+					<p class="card-subtitle">{{item.subtitle}}</p>
+				</div>
+			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
