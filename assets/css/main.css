@@ -785,28 +785,30 @@ section.work {
       section.work .center-div .flex-row .card {
         min-height: 200px;
         width: 300px;
-        margin: 3.5em 1em;
+        margin: 1.5em 1em;
         background: white;
         border: 1px solid #E5E5E5;
         -webkit-border-radius: 5px;
                 border-radius: 5px;
-        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
-        transition: -webkit-box-shadow 0.3s ease-in-out;
-        transition: box-shadow 0.3s ease-in-out;
-        transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden; }
         section.work .center-div .flex-row .card:hover {
+          -webkit-transform: scale(1.03);
+              -ms-transform: scale(1.03);
+                  transform: scale(1.03);
           -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
                   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25); }
         section.work .center-div .flex-row .card .card-image {
-          margin: -50px auto 1em;
-          width: 90%;
-          height: 165px;
+          margin: 0 auto 1em;
+          width: 100%;
+          max-height: 185px;
           z-index: 1;
           overflow: hidden;
-          -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); }
+          -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
           section.work .center-div .flex-row .card .card-image img {
             width: 100%;
             margin: 0; }
