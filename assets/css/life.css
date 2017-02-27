@@ -560,7 +560,7 @@ nav.home-nav {
       height: 50px;
       padding: 0.3em 0;
       cursor: pointer; }
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 880px) {
       nav.home-nav .nav-content ul.nav-links {
         display: none;
         z-index: 1;
