@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/Users/melvin/.rvm/gems/ruby-2.3.1/bin:/Users/melvin/.rvm/gems/ruby-2.3.1@global/bin:/Users/melvin/.rvm/rubies/ruby-2.3.1/bin:/opt/local/bin:/opt/local/sbin:/Users/melvin/anaconda/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/melvin/bin:/Users/melvin/.rvm/bin:/Users/melvin/mongodb/bin
+
+Yarn version: 
+  0.24.6
+
+Node version: 
+  7.6.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "browser-sync-jekyll",
+    "version": "0.0.0",
+    "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Shane Osbourne",
+    "license": "ISC",
+    "devDependencies": {
+      "browser-sync": "^2.17.5",
+      "gulp": "^3.8.8",
+      "gulp-autoprefixer": "^3.1.0",
+      "gulp-gh-pages": "^0.5.4",
+      "gulp-sass": "^2.1.0",
+      "gulp-util": "^3.0.7"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    },
+    "keywords": [
+      "jekyll",
+      "gulp",
+      "sass",
+      "browsersync"
+    ],
+    "bugs": {
+      "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    },
+    "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, open '/Users/melvin/portfolio/node_modules/browser-sync/node_modules/qs/package.json'
