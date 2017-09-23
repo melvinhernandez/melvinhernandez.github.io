@@ -1,3 +1,9 @@
+- title: Ambedo
+  type: Node.js/MongoDB
+  subtitle: REST API allowing Spotify users to share Spotify Playlists with others.
+  image: assets/img/ambedo-min.jpg
+  url: https://github.com/melvinhernandez/ambedo
+
 - title: react-to-spotify
   type: React/Redux
   subtitle: Playlist generator using the Spotify API, ReactJS, and Redux.
@@ -22,7 +28,7 @@
   image: assets/img/gitlit-min.jpg
   url: https://github.com/melvinhernandez/gitlit
 
-- title: DB61B
+- title: JavaSQL
   type: Java
   subtitle: Relational database management system with simple query language.
   image: assets/img/db61b-min.jpg
@@ -51,19 +57,19 @@
   type: Design
   subtitle: Design study for university's recruitment & retention center.
   image: assets/img/latinx-min.jpg
-  url: '#'
+  url: 'https://www.behance.net/gallery/49429295/Logos'
 
 - title: RAZA RRC
   type: Design
   subtitle: Modernizing organizations social media and web branding.
   image: assets/img/raza-min.jpg
-  url: '#'
+  url: 'https://www.behance.net/gallery/49429295/Logos'
 
 - title: Casa Sin Fronteras
   type: Design
   subtitle: Logo design for a Berkeley low-income student housing project.
   image: assets/img/csf-min.jpg
-  url: '#'
+  url: 'https://www.behance.net/gallery/49429295/Logos'
 
 - title: UndocuGrad
   type: Design
