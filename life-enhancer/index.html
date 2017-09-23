@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Life-Enhancer | MH</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href=/assets/css/life.css >
+        <script src="/assets/js/jquery-3.1.0.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="home-nav">
+	<div class="nav-content">
+		<a class="logo" href="/#intro">
+			<img src="/assets/img/m-dot-tech.png">
+		</a>
+		<ul class="nav-links">
+			<a id="about-link" class="flex-left" href="#about"><li>ABOUT ME</li></a>
+			<a class="flex-left" href="#work"><li>WORK</li></a>
+			<a class="flex-left" href="#contact"><li>CONTACT</li></a>
+			<a class="flex-left only-mobile" href="https://medium.com/@MelvinDotTech"><li>melvin.thought</li></a>
+			<a class="flex-left only-mobile" href="https://open.spotify.com/user/mel__erk"><li>melvin.music</li></a>
+			<div class="flex-right">
+				<a class="flex-block" href="https://medium.com/@MelvinDotTech"><li>melvin.thought</li></a>
+				<a class="flex-block" href="https://open.spotify.com/user/mel__erk"><li>melvin.music</li></a>
+			</div>
+		</ul>
+		<div class="mob-nav-btn">
+			<span class="hamburger"></span>
+			<span class="hamburger"></span>
+			<span class="hamburger"></span>
+		</div>
+	</div>
+</nav>
+
+
+<div class="center-div">
+	<div class="canvas">
+		<div class="reality"></div>
+		<div class="fantasy">
+			<div class="the-wardrobe"></div>
+		</div>
+	</div>
+</div>
+<script>
+	var isDragging = false,
+		lastDropped = 0;
+
+	$(function() {
+		var canvas = $('.canvas'),
+			reality = $('.reality'),
+			fantasy = $('.fantasy'),
+			key = $('.the-wardrobe');
+
+		key.on('mousedown', function(e) {
+			isDragging = true;
+			lastDropped = e.clientX;
+		});
+
+		// $('.canvas').mouseleave(function() {
+		// 	isDragging = false;
+		// });
+
+		$(document).on('mousemove', function(e) {
+			if (!isDragging) {
+				return;
+			} else {
+				var offsetDrag = canvas.width() - (e.clientX - canvas.offset().left);
+				if (offsetDrag > 0 && offsetDrag < 1224) {
+					reality.css('right', offsetDrag);
+					fantasy.css('width', offsetDrag);
+				};
+			}
+		}).on('mouseup', function(e) {
+			isDragging = false;
+		});
+	});
+</script>
+    </body>
+</html>

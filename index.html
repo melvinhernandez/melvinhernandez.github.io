@@ -1,16 +1,257 @@
----
-layout: default
-title: melvin.tech | my tech side
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>melvin.tech | my tech side</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.png" type="image/png">
+        <link rel="icon" href="/favicon.png" type="image/png">
 
-<div id="home-wrap">
-	{% include intro.html %}
-	{% include navbar.html %}
-	{% include about.html %}
-	{% include work.html %}
-	{% include contact.html %}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="assets/js/jquery-3.1.0.min.js"></script>
+        <script src="assets/js/scroll.js"></script>
+    </head>
+    <body>
+        <div id="home-wrap">
+	<section class="intro" id="intro">
+	<header>
+		<h1><span class="thin">melvin</span><span class="thick">.tech</span></h1>
+	</header>
+	<div class="subheader">
+		<p class="left">Aspiring <span class="highlight">software developer</span></p>
+		<p class="right"> <span class="highlight">&amp; STEM educator</span><span> in California</span></p>
+	</div>
+	<i class="fa fa-chevron-down" aria-hidden="true"></i>
+</section>
+
+	<nav class="home-nav">
+	<div class="nav-content">
+		<a class="logo" href="/#intro">
+			<img src="/assets/img/m-dot-tech.png">
+		</a>
+		<ul class="nav-links">
+			<a id="about-link" class="flex-left" href="#about"><li>ABOUT ME</li></a>
+			<a class="flex-left" href="#work"><li>WORK</li></a>
+			<a class="flex-left" href="#contact"><li>CONTACT</li></a>
+			<a class="flex-left only-mobile" href="https://medium.com/@MelvinDotTech"><li>melvin.thought</li></a>
+			<a class="flex-left only-mobile" href="https://open.spotify.com/user/mel__erk"><li>melvin.music</li></a>
+			<div class="flex-right">
+				<a class="flex-block" href="https://medium.com/@MelvinDotTech"><li>melvin.thought</li></a>
+				<a class="flex-block" href="https://open.spotify.com/user/mel__erk"><li>melvin.music</li></a>
+			</div>
+		</ul>
+		<div class="mob-nav-btn">
+			<span class="hamburger"></span>
+			<span class="hamburger"></span>
+			<span class="hamburger"></span>
+		</div>
+	</div>
+</nav>
+
+	<section class="about" id="about">
+	<div class="center-div about-wrapper">
+		<h2><i class="fa fa-quote-left" aria-hidden="true"></i>
+This ain't no intro, this the entree <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
+		<p>I am . . . </p>
+		<p>. . . a fourth-year student, <span class="bg-highlight">majoring in cognitive science</span><br />
+		and minoring in computer science, at UC Berkeley.</p>
+		<p>. . . passionate about <span class="bg-highlight">serving underrepresented communities</span><br />
+through my passion for web development and design.</p>
+		<p>. . . interested in <span class="bg-highlight">disseminating computer science</span><br />
+to high school students of color.</p>
+	</div>
+</section>
+
+	<section class="work" id="work">
+	<div class="center-div">
+		<div class="heading">
+			<h3>FEATURED WORK</h3>
+		</div>
+		<div class="flex-row">
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/ambedo-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/ambedo">Ambedo</a>
+					<p class="work-tag">Node.js/MongoDB</p>
+					<p class="card-subtitle">REST API allowing Spotify users to share Spotify Playlists with others.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/spotify.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="http://melvin.tech/react-to-spotify/">react-to-spotify</a>
+					<p class="work-tag">React/Redux</p>
+					<p class="card-subtitle">Playlist generator using the Spotify API, ReactJS, and Redux.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/todo-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/ToDo-On-Rails">To-Do On Rails</a>
+					<p class="work-tag">Rails</p>
+					<p class="card-subtitle">Designed, developed, and deployed Ruby on Rails ToDo app to Heroku.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/raza-web-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://raza.berkeley.edu">raza.berkeley.edu</a>
+					<p class="work-tag">Gulp</p>
+					<p class="card-subtitle">Responsive website developed for UC Berkeley organization using Gulp.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/gitlit-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/gitlit">GitLit</a>
+					<p class="work-tag">Java</p>
+					<p class="card-subtitle">A git clone version control system featuring branch merging.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/db61b-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/updated-db61b">JavaSQL</a>
+					<p class="work-tag">Java</p>
+					<p class="card-subtitle">Relational database management system with simple query language.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/loa-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/lines-of-action">Lines of Action</a>
+					<p class="work-tag">Java</p>
+					<p class="card-subtitle">A command line board game using alpha-beta pruning for AI multiplayer.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/canfield-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/canfield">Canfield</a>
+					<p class="work-tag">Java</p>
+					<p class="card-subtitle">Solitaire's GUI implementation with an undo feature using a linked list.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/2048-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://github.com/melvinhernandez/2048-Java">Game 2048</a>
+					<p class="work-tag">Java</p>
+					<p class="card-subtitle">A GUI implementation of the popular web game 2048.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/latinx-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://www.behance.net/gallery/49429295/Logos">Latinx RRC</a>
+					<p class="work-tag">Design</p>
+					<p class="card-subtitle">Design study for university's recruitment & retention center.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/raza-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://www.behance.net/gallery/49429295/Logos">RAZA RRC</a>
+					<p class="work-tag">Design</p>
+					<p class="card-subtitle">Modernizing organizations social media and web branding.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/csf-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://www.behance.net/gallery/49429295/Logos">Casa Sin Fronteras</a>
+					<p class="work-tag">Design</p>
+					<p class="card-subtitle">Logo design for a Berkeley low-income student housing project.</p>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/img/undocugrad-min.jpg" alt="">
+				</div>
+				<div class="card-content">
+					<a class="card-title" href="https://www.facebook.com/fusionamerica/videos/782606445234153/">UndocuGrad</a>
+					<p class="work-tag">Design</p>
+					<p class="card-subtitle">Design for UC Berkeley's first undocumented student graduation.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+	<section class="contact" id="contact">
+  <div class="contact-model
+  social-media">
+    <h3>Find Me On</h3>
+    <a class="social-btn github-btn" href="https://github.com/melvinhernandez">GitHub</a>
+    <a class="social-btn behance-btn" href="https://www.behance.net/melvin-design">Behance</a>
+    <a class="social-btn spotify-btn" href="https://open.spotify.com/user/mel__erk">Spotify</a>
+    <a class="social-btn medium-btn" href="https://medium.com/@MelvinDotTech">Medium</a>
+  </div>
+  <div class="contact-model email-me">
+    <h3>Let's Work Together!</h3>
+    <form class="contact-form" action="https://formspree.io/melvinfhernandez94@gmail.com" method="POST">
+      <div class="in-group">
+        <label>Name</label>
+        <input type="text" name="name"/>
+      </div>
+      <div class="in-group">
+        <label>Email</label>
+        <input type="email" name="_replyto"/>
+      </div>
+      <div class="in-group">
+        <label>Tell me more...</label>
+        <textarea rows="6" name="information"></textarea>
+      </div>
+      <input type="hidden" name="_next" value="http://melvin.tech/"/>
+      <input type="text" name="_gotcha" style="display:none"/>
+      <input type="submit" value="Send" id="contact-btn"/>
+    </form>
+  </div>
+</section>
+
 </div>
 <script src="assets/js/mobile-nav.js"></script>
+<script src="assets/js/vanilla-script.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,3 +262,6 @@ title: melvin.tech | my tech side
   ga('send', 'pageview');
 
 </script>
+
+    </body>
+</html>
