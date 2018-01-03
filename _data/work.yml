@@ -4,11 +4,11 @@
   image: assets/img/ambedo-min.jpg
   url: https://github.com/melvinhernandez/ambedo
 
-- title: react-to-spotify
-  type: React/Redux
-  subtitle: Playlist generator using the Spotify API, ReactJS, and Redux.
+- title: fullstack-spotify
+  type: React/Node
+  subtitle: A Spotify playlist generator using a Node backend deployed to Heroku.
   image: assets/img/spotify.jpg
-  url: http://melvin.tech/react-to-spotify/
+  url: https://github.com/melvinhernandez/fullstack-spotify
 
 - title: To-Do On Rails
   type: Rails
